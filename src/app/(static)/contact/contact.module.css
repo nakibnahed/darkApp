@@ -1,0 +1,109 @@
+/* ✅ Main Container (Centered) */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 50px 20px;
+  z-index: 999;
+}
+
+/* ✅ Title Styling */
+.title {
+  font-size: 46px;
+  font-weight: 900;
+  background: linear-gradient(to bottom, #ee681a, rgb(54, 29, 17));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ✅ Description */
+.description {
+  font-size: 20px;
+  line-height: 1.8rem;
+  /* max-width: 600px; */
+}
+
+/* ✅ Contact Form (Full-Width, Centered) */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ✅ Input and Textarea Styling */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #ee681a;
+}
+
+/* ✅ Textarea Resizing */
+.form textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* ✅ Keep button same style but fix width */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  width: max-content; /* ✅ Button only as wide as its content */
+  background: linear-gradient(to bottom, #ee681a, rgb(155, 64, 22));
+  border: none;
+  border-radius: 6px;
+  color: #222;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* ✅ Keep arrow styling */
+.button .arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ Hover Effect */
+.button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(to bottom, #ee681a, #ee681a);
+}
+
+.button:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* ✅ Responsive for Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 15px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .description {
+    font-size: 18px;
+    max-width: 100%;
+  }
+}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Card } from "@/components/card/card";
+
 import { blogs } from "./data"; // Import blog data
 import EyeIcon from "/public/globe.svg"; // Import your eye.svg icon
 
